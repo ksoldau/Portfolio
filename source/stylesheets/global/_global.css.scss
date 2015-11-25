@@ -43,14 +43,25 @@ html, body {
     padding: 20px 5% 30px 5%;
   }
 }
+.clear {
+  clear: both;
+}
+
 .nav {
   font-size: 14px;
-  float: right;
+}
+.nav__name {
+  float: left;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 4px;
+  font-size: 24px;
+  text-decoration: none;
+  color: $highlight;
 }
 .nav__list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 4px 0 0 0;
   text-align: right;
 }
 .nav__item {
@@ -60,24 +71,13 @@ html, body {
 .nav__link {
   text-decoration: none;
   color: $black;
-
-  &:after {
-    transition: all 0.25s ease-in-out;
-    content: '';
-    display: block;
-    margin-top: -10px;
-    height: 1px;
-    width: 0%;
-    background-color: $black;
-    margin-top: 4px;
-  }
+  transition: color 0.15s ease-in-out;
 
   &:hover {
-    &:after {
-      width: 100%
-    }
+    color: $highlight;
   }
 }
+
 .footer {
   position: absolute;
   font-size: 12px;
@@ -93,7 +93,4 @@ html, body {
   @media (max-width: $max_xs) {
     right: 5%;
   }
-}
-.clear {
-  clear: both;
 }

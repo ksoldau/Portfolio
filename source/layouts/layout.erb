@@ -21,7 +21,22 @@
 
   <body class="<%= page_classes %>">
     <div class="page">
+      <nav class="nav">
+        <% if !current_page.data.homepage? %>
+        <a class="nav__name" href="/">Katie Soldau</a>
+        <% end %>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="./resume.pdf">Resume</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="./about.html">About</a>
+          </li>
+        </ul>
+      </nav>
+
       <%= yield %>
+
     </div>
   </body>
 </html>
