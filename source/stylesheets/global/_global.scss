@@ -1,0 +1,96 @@
+$footer_height: 40px;
+
+$black: #000000;
+$white: #ffffff;
+$highlight: tomato;
+
+$matisia: #0A6378;
+$human_ventures: #434241;
+$transforming_medicine: #506E2D;
+
+$max_xs: 800px;
+$min_sm: 801px;
+$max_sm: 939px;
+$min_md: 940px;
+$max_md: 1199px;
+$min_lg: 1200px;
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+.page {
+  position: relative;
+  min-height: 100%;
+  margin-bottom: -1 * $footer_height;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1200px;
+  @media (min-width: $min_lg) {
+    padding: 30px 40px 40px 40px;
+  }
+  @media (min-width: $min_sm) and (max-width: $max_md) {
+    padding: 30px 5% 40px 5%;
+  }
+  @media (max-width: $max_xs) {
+    padding: 20px 5% 30px 5%;
+  }
+}
+.clear {
+  clear: both;
+}
+
+.nav {
+  font-size: 14px;
+}
+.nav__name {
+  float: left;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 4px;
+  font-size: 24px;
+  text-decoration: none;
+  color: $highlight;
+}
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 4px 0 0 0;
+  text-align: right;
+}
+.nav__item {
+  display: inline-block;
+  margin-left: 20px;
+}
+.nav__link {
+  text-decoration: none;
+  color: $black;
+  transition: color 0.15s ease-in-out;
+
+  &:hover {
+    color: $highlight;
+  }
+}
+
+.footer {
+  position: absolute;
+  font-size: 12px;
+  text-align: right;
+  bottom: 0;
+  height: $footer_height - 10;
+  @media (min-width: $min_lg) {
+    right: 40px;
+  }
+  @media (min-width: $min_sm) and (max-width: $max_md) {
+    right: 5%;
+  }
+  @media (max-width: $max_xs) {
+    right: 5%;
+  }
+}
