@@ -2,43 +2,40 @@
 homepage: true
 ---
 
-<div class="page">
-  <div class="hero">
-    <h1 class="hero__name">Katie Soldau</h1>
-    <p class="hero__desc">I’m a web developer blah blah blah I like to do some things but also I don’t. This should probably be about three lines I guess. More words more words more words.</p>
-  </div>
-  <div class="projects">
-    <%= partial(:"partials/project-tile", :locals => {
-      :name => "Matisia",
-      :role => "Front-end development",
-      :img_url => "http://placehold.it/350x350",
-      :details_url => "/details/matisia.html"
-    }) %>
-    <%= partial(:"partials/project-tile", :locals => {
-      :name => "Human Ventures",
-      :role => "Front-end development",
-      :img_url => "http://placehold.it/350x350",
-      :details_url => "/details/human-ventures.html"
-    }) %>
-    <%= partial(:"partials/project-tile", :locals => {
-      :name => "Transforming Medicine",
-      :role => "Front-end development",
-      :img_url => "http://placehold.it/350x350",
-      :details_url => "/details/transforming-medicine.html"
-    }) %>
-    <%= partial(:"partials/project-tile", :locals => {
-      :name => "Wellthy",
-      :role => "Front-end development",
-      :img_url => "http://placehold.it/350x350",
-      :details_url => "/details/wellthy.html"
-    }) %>
-    <%= partial(:"partials/project-tile", :locals => {
-      :name => "Ronik Awards Page",
-      :role => "Design and front-end development",
-      :img_url => "http://placehold.it/350x350",
-      :details_url => "/details/ronik-awards.html"
-    }) %>
-    <div class="clear"></div>
-  </div>
-<footer class="footer">&#169 Katie Soldau</footer>
+<div class="hero">
+  <h1 class="hero__name">Katie Soldau</h1>
+  <p class="hero__desc">I’m a web developer blah blah blah I like to do some things but also I don’t. This should probably be about three lines I guess. More words more words more words.</p>
+</div>
+<div class="projects">
+  <%= partial(:"partials/project-tile", :locals => {
+    :name => "Matisia",
+    :role => "Front-end development",
+    :img_url => "http://placehold.it/350x350",
+    :details_url => "/details/matisia.html"
+  }) %>
+  <%= partial(:"partials/project-tile", :locals => {
+    :name => "Human Ventures",
+    :role => "Front-end development",
+    :img_url => "http://placehold.it/350x350",
+    :details_url => "/details/human-ventures.html"
+  }) %>
+  <%= partial(:"partials/project-tile", :locals => {
+    :name => "Transforming Medicine",
+    :role => "Front-end development",
+    :img_url => "http://placehold.it/350x350",
+    :details_url => "/details/transforming-medicine.html"
+  }) %>
+  <%= partial(:"partials/project-tile", :locals => {
+    :name => "Wellthy",
+    :role => "Front-end development",
+    :img_url => "http://placehold.it/350x350",
+    :details_url => "/details/wellthy.html"
+  }) %>
+  <%= partial(:"partials/project-tile", :locals => {
+    :name => "Ronik Awards Page",
+    :role => "Design and front-end development",
+    :img_url => "http://placehold.it/350x350",
+    :details_url => "/details/ronik-awards.html"
+  }) %>
+  <div class="clear"></div>
 </div>
