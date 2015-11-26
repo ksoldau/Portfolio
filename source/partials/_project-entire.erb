@@ -1,0 +1,25 @@
+<h1 class="proj-name"><%= name %></h1>
+<ul class="proj-details">
+  <li class="proj-detail"><%= role %></li>
+  <li class="proj-detail"><%= date %></li>
+  <li class="proj-detail">
+    <a href="<%= live_link %>" class="proj-detail__live-link"><%= live_link_name %></a>
+  </li>
+</ul>
+
+<div class="proj-content">
+<% content.each do |piece| %>
+  <% if piece[:type] === "copy" %>
+  <p class="copy
+    <%= piece[:copy] %>
+  </p>
+  <% elsif piece[:type] === "image" %>
+  <div class="proj-image-wrap">
+    <div class="proj-image">
+      <img src="<%= piece[:url] %>">
+      <span class="comment"><%= piece[:comment] %></span>
+    </div>
+  </div>
+  <% end %>
+<% end %>
+</div>

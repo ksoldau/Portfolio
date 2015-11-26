@@ -1,0 +1,43 @@
+.proj-name {
+  margin-top: 140px;
+}
+.proj-details {
+  margin-top: 12px;
+  margin-bottom: 60px;
+}
+.proj-detail {
+  display: inline-block;
+  font-size: 14px;
+
+  &:after {
+    content: "|";
+    display: inline-block;
+    margin: 0 10px;
+  }
+  &:last-child {
+    &:after {
+      content: "";
+    }
+  }
+}
+.proj-content {
+  > * {
+    padding: 20px 0px;
+  }
+}
+.proj-content .copy {
+  width: 50%;
+}
+.proj-image {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.summary {
+  margin-top: 50px;
+  width: 50%;
+}
+.comment {
+  position: absolute;
+  font-size: 12px;
+  margin-top: 3px;
+}
