@@ -1,0 +1,29 @@
+.headshot {
+  float: left;
+  margin-top: 125px;
+  width: 340px;
+  height: 340px;
+  background-size: contain;
+  border-radius: 50%;
+  background-image: (url("/images/pineapple.jpg"));
+}
+.bio {
+  width: calc(100% - 410px);
+  margin-left: 70px;
+  float: left;
+  margin-top: 125px;
+}
+.contact {
+  margin-top: 20px;
+  > li {
+    font-size: 14px;
+    padding: 5px 0;
+  }
+
+  i {
+    margin-right: 10px;
+  }
+}
+
+
+

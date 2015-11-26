@@ -8,12 +8,13 @@ html, body {
 }
 .page {
   position: relative;
-  min-height: 100%;
+  min-height: 670px;
+  height: 100%;
   margin-bottom: -1 * $footer_height;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   @media (min-width: $min_lg) {
     padding: 30px 40px 40px 40px;
   }
@@ -38,7 +39,6 @@ html, body {
   letter-spacing: 0.6px;
   font-size: 24px;
   text-decoration: none;
-  color: $highlight;
 }
 .nav__list {
   list-style: none;

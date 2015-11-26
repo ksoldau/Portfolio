@@ -12,7 +12,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
     <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,800,700,900,600,500,300,200,100' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag "normalize", "all" %>
@@ -32,16 +35,17 @@
             <a class="nav__link" href="/">Work</a>
           <% end %>
           <li class="nav__item">
-            <a class="nav__link" href="./resume.pdf">Resume</a>
+            <a class="nav__link" href="/resume.pdf">Resume</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="./about.html">About</a>
+            <a class="nav__link" href="/about.html">About</a>
           </li>
         </ul>
       </nav>
 
       <%= yield %>
 
+      <div class="clear"></div>
       <footer class="footer">&#169 Katie Soldau</footer>
 
     </div>
