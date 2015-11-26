@@ -12,15 +12,7 @@
   }
 }
 .hero__name {
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 7px;
-  font-size: 48px;
-  color: $highlight;
   margin-bottom: 10px;
-  @media (max-width: $max_xs) {
-    font-size: 24px;
-    letter-spacing: 3.5px;
-  }
 }
 .hero__desc {
   font-size: 16px;
@@ -31,13 +23,16 @@
 }
 .projects {
   @media (max-width: $max_xs) {
-    margin-top: 70px;
+    margin-top: 100px;
     margin-bottom: 70px;
   }
   @media (min-width: $min_sm) {
-    margin-top: 100px;
+    margin-top: 135px;
     margin-bottom: 100px;
   }
+}
+.projects__header {
+  padding-bottom:  5px;
 }
 .project {
   position: relative;
@@ -46,7 +41,7 @@
 
   &:hover {
     .project__overlay {
-      background-color: rgba(50,50,50,0.5);
+      background-color: rgba(0, 0, 0, 0.4);
     }
     .project__info {
       margin-bottom: 10px;
@@ -60,11 +55,9 @@
     width: calc(50% - 12px);
     margin: 12px;
     &:nth-child(2n+1) {
-      color: green;
       margin: 12px 12px 12px 0;
     }
     &:nth-child(2n) {
-      color: blue;
       margin: 12px 0 12px 12px;
     }
   }
