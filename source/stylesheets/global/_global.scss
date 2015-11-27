@@ -3,12 +3,11 @@
   box-sizing: border-box;
 }
 html, body {
-  height: 100%;
+  min-height: 100%;
   font-weight: 400;
 }
 .page {
   position: relative;
-  min-height: 670px;
   height: 100%;
   margin-bottom: -1 * $footer_height;
   margin-left: auto;
@@ -30,9 +29,10 @@ html, body {
 }
 
 .nav {
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 10px;
   margin-top: 10px;
+  overflow: hidden;
 }
 .nav__name {
   float: left;
@@ -51,6 +51,7 @@ html, body {
 }
 .nav__link {
   text-decoration: none;
+  font-weight: 700;
   color: $black;
   transition: color 0.15s ease-in-out;
 

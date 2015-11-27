@@ -23,8 +23,8 @@ a {
 }
 
 h1 {
-  letter-spacing: 1px;
-  font-size: 48px;
+  letter-spacing: 0.9px;
+  font-size: 40px;
   font-weight: 600;
   @media (max-width: $max_xs) {
     font-size: 30px;
@@ -33,7 +33,7 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   @media (max-width: $max_xs) {
     font-size: 20px;
