@@ -10,7 +10,10 @@
 <div class="proj-content">
 <% content.each do |piece| %>
   <% if piece[:type] === "copy" %>
-  <p class="copy
+    <% if piece[:header] %>
+    <h3 class="proj-header"><%= piece[:header] %></h3>
+    <% end %>
+  <p class="copy">
     <%= piece[:copy] %>
   </p>
   <% elsif piece[:type] === "image" %>
