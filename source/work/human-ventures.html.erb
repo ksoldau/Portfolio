@@ -1,0 +1,45 @@
+  <%= partial(:"partials/project-entire", :locals => {
+    :name => "Human Ventures",
+    :role => "Front-end development",
+    :date => "March 2015",
+    :live_link => "http://www.humanventures.co",
+    :live_link_name => "www.humanventures.co",
+    :content => [
+      {
+        type: "copy",
+        copy: "While on co-op at <a href='http://www.ronikdesign.com'>Ronik</a> I worked on a team that built a responsive landing page for Human Ventures that could excite investors. The text on the landing page was unveiled via elegant scroll animations. Human Ventures is a startup studio that is committed to helping early-stage startups with talent, leadership, and resources. I worked on the front-end of the site with <a href='http://maxlever.me/'>Max Lever</a>, who was another co-op.  The client has the current control over the background image and the content, so the live site may not appear as it did when we first launched it."
+      },
+      {
+        type: "copy",
+        copy: "We set up a CMS on <a href='http://www.webhook.com/'>Webhook</a>, used <a href='https://github.com/ronik-design/slush-stencil'>Slush Stencil</a> to scaffold the site, and styled in <a href='https://learnboost.github.io/stylus/'>Stylus</a>. For the numerous scroll interactions we used <a href='http://janpaepke.github.io/ScrollMagic'>ScrollMagic</a>."
+      },
+      {
+        type: "image",
+        url: "../images/work/hv/hero-desktop.png",
+        comment: "screenshot of the homepage on desktop"
+      },
+      {
+        type: "image",
+        url: "../images/work/hv/hero-mobile.png",
+        comment: "screenshot of the homepage on mobile"
+      },
+      {
+        type: "copy",
+        header: "Scroll Animations",
+        copy: "The landing page had many text animations that happened on scroll. These were done with <a href='http://janpaepke.github.io/ScrollMagic'>ScrollMagic</a>, as previously stated. We set up waypoints that would trigger certain animations, and calculated certain CSS properties based on the progress of the scrollui."
+      },
+      {
+        type: "image",
+        url: "../images/work/hv/button.gif",
+        comment: "screen capture of the call-to-action button"
+      }
+    ],
+    :prev => {
+      url: "../work/transforming-medicine.html",
+      title: "Transforming Medicine"
+    },
+    :after => {
+      url: "../work/matisia.html",
+      title: "Matisia"
+    }
+  }) %>
