@@ -38,12 +38,12 @@ html, body {
   letter-spacing: 0.6px;
   font-size: 24px;
   text-decoration: none;
-  @media (max-width: 412px) {
+  @media (max-width: $max_xs) {
     text-align: center;
     display: block;
     margin-bottom: 12px;
   }
-  @media (min-width: 413px) {
+  @media (min-width: $min_sm) {
     float: left;
   }
 }
@@ -62,7 +62,7 @@ html, body {
 .nav__link {
   text-decoration: none;
   font-weight: 700;
-  color: $black;
+  color: #c5c5c5;
   transition: color 0.15s ease-in-out;
 
   &:hover {
@@ -74,16 +74,15 @@ html, body {
   position: absolute;
   padding-top: 20px;
   font-size: 12px;
-  text-align: right;
   bottom: 0;
   height: $footer_height - 10;
   @media (min-width: $min_lg) {
-    right: 40px;
+    left: 40px;
   }
   @media (min-width: $min_sm) and (max-width: $max_md) {
-    right: 5%;
+    left: 5%;
   }
   @media (max-width: $max_xs) {
-    right: 5%;
+    left: 5%;
   }
 }
