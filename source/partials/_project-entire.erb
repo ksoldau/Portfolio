@@ -3,7 +3,7 @@
   <li class="proj-detail"><%= role %></li>
   <li class="proj-detail"><%= date %></li>
   <li class="proj-detail">
-    <a href="<%= live_link %>" class="proj-detail__live-link"><%= live_link_name %></a>
+    <a target="_blank" href="<%= live_link %>" class="proj-detail__live-link"><%= live_link_name %></a>
   </li>
 </ul>
 
@@ -11,7 +11,7 @@
 <% content.each do |piece| %>
   <% if piece[:type] === "copy" %>
     <% if piece[:header] %>
-    <h3 class="proj-header"><%= piece[:header] %></h3>
+      <h3 class="proj-header"><%= piece[:header] %></h3>
     <% end %>
   <p class="copy">
     <%= piece[:copy] %>
@@ -25,4 +25,23 @@
   </div>
   <% end %>
 <% end %>
+</div>
+
+<div class="next">
+  <% if defined?(after) %>
+  <div class="next__next">
+      <h3 class="next__header">Next project</h3>
+      <a class="next__link" href="<%= after[:url] %>" >
+        <%= after[:title] %>
+      </a>
+  </div>
+  <% end %>
+  <% if defined?(prev) %>
+  <div class="next__prev">
+      <h3 class="next__header">Previous project</h3>
+      <a class="next__link" href="<%= prev[:url] %>" >
+        <%= prev[:title] %>
+      </a>
+  </div>
+  <% end %>
 </div>
