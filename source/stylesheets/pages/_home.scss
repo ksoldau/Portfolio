@@ -27,6 +27,32 @@
 .projects__header {
   padding-bottom:  5px;
 }
+.projects__item {
+  @media (min-width: $min_sm) and (max-width: $max_sm) {
+    &:nth-child(2n+1) {
+      .project {
+        margin: 12px 12px 12px 0;
+      }
+    }
+    &:nth-child(2n) {
+      .project {
+        margin: 12px 0 12px 12px;
+      }
+    }
+  }
+  @media (min-width: $min-md) {
+    &:nth-child(3n+1) {
+      .project {
+        margin: 12px 12px 12px 0;
+      }
+    }
+    &:nth-child(3n) {
+      .project {
+        margin: 12px 0 12px 12px;
+      }
+    }
+  }
+}
 .project {
   position: relative;
   height: auto;
@@ -47,22 +73,10 @@
   @media (min-width: $min_sm) and (max-width: $max_sm) {
     width: calc(50% - 12px);
     margin: 12px;
-    &:nth-child(2n+1) {
-      margin: 12px 12px 12px 0;
-    }
-    &:nth-child(2n) {
-      margin: 12px 0 12px 12px;
-    }
   }
   @media (min-width: $min-md) {
     width: calc(33.333% - 16px);
     margin: 12px;
-    &:nth-child(3n+1) {
-      margin: 12px 12px 12px 0;
-    }
-    &:nth-child(3n) {
-      margin: 12px 0 12px 12px;
-    }
   }
 }
 .project__img-wrap {
