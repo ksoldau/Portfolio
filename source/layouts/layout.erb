@@ -27,18 +27,18 @@
   <body class="<%= page_classes %>">
     <div class="page">
       <nav class="nav">
-        <% if !current_page.data.homepage? %>
+        <% if !(current_page.data.page === "home") %>
         <a class="nav__name" href="/">Katie Soldau</a>
         <% end %>
         <ul class="nav__list">
-          <% if !current_page.data.homepage? %>
-            <a class="nav__link" href="/">Work</a>
-          <% end %>
           <li class="nav__item">
-            <a class="nav__link" href="/resume.pdf">Resume</a>
+            <%= link_to "Work", "/", :class => (current_page.data.page == "home" ? "nav__link active" : "nav__link") %>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="/about.html">About</a>
+            <%= link_to "Resume", "/resume.pdf", :target => "_blank", :class => (current_page.data.page == "resume" ? "nav__link active" : "nav__link") %>
+          </li>
+          <li class="nav__item">
+          <%= link_to "About", "/about.html", :class => (current_page.data.page == "about" ? "nav__link active" : "nav__link") %>
           </li>
         </ul>
       </nav>
@@ -46,8 +46,8 @@
       <%= yield %>
 
       <div class="clear"></div>
-    </div>
-    <footer class="footer">&#169 Katie Soldau</footer>
+      <footer class="footer">&#169 Katie Soldau</footer>
 
+    </div>
   </body>
 </html>
