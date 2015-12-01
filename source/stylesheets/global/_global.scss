@@ -3,17 +3,22 @@
   box-sizing: border-box;
 }
 html, body {
-  min-height: 100%;
+  height: 100%;
   font-weight: 400;
 }
 .page {
   position: relative;
-  height: 100%;
+  min-height: 100%;
   margin-bottom: -1 * $footer_height;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   max-width: 1000px;
+
+  &:after {
+    content: "";
+    display: block;
+  }
   @media (min-width: $min_lg) {
     padding: 30px 40px $footer_height 40px;
   }
@@ -69,20 +74,24 @@ html, body {
     color: $highlight;
   }
 }
-
+.footer, .page:after {
+  height: $footer_height;
+}
 .footer {
-  position: absolute;
+  //position: absolute;
   padding-top: 20px;
   font-size: 12px;
-  bottom: 0;
-  height: $footer_height - 10;
+  margin: 0 auto;
+  max-width: 1000px;
+  //bottom: 0;
+  //height: $footer_height - 10;
   @media (min-width: $min_lg) {
-    left: 40px;
+    padding-left: 40px;
   }
   @media (min-width: $min_sm) and (max-width: $max_md) {
-    left: 5%;
+    padding-left: 5%;
   }
   @media (max-width: $max_xs) {
-    left: 5%;
+    padding-left: 5%;
   }
 }
