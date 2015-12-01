@@ -1,0 +1,39 @@
+  <%= partial(:"partials/project-entire", :locals => {
+    :name => "Ronik Awards",
+    :role => "Design & front-end development",
+    :date => "May 2015",
+    :live_link => "http://www.ronikdesign.com/awards",
+    :live_link_name => "www.ronikdesign.com/awards",
+    :content => [
+      {
+        type: "copy",
+        copy: "I added a responsive page to <a target='_blank' href='http://www.ronikdesign.com'>Ronik's</a> website while I worked there as a co-op. I designed and then built the Awards page with another co-op."
+      },
+      {
+        type: "copy",
+        copy: "Before we started to design the page we looked at elements that were already in use on the site and thought about how we could reuse them. We knew that the page we were creating had to fit in seamlessly with the site that already existed, so we aimed to give it a similar look and feel as the rest of the site."
+      },
+      {
+        type: "image",
+        size: "mobile",
+        url: "../images/work/ra/mobile.png",
+        comment: "screenshot of the page on mobile"
+      },
+      {
+        type: "image",
+        size: "tablet",
+        url: "../images/work/ra/tablet.png",
+        comment: "screenshot of the page on tablet"
+      },
+      {
+        type: "image",
+        size: "desktop",
+        url: "../images/work/ra/desktop.png",
+        comment: "screenshot of part of the page on desktop"
+      }
+    ],
+    :prev => {
+      url: "../work/wellthy.html",
+      title: "Wellthy"
+    }
+  }) %>
