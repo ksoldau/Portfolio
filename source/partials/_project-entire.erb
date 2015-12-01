@@ -18,7 +18,7 @@
   </p>
   <% elsif piece[:type] === "image" %>
   <div class="proj-image-wrap">
-    <div class="proj-image">
+    <div class="proj-image <%= piece[:size] %>">
       <img src="<%= piece[:url] %>">
       <span class="comment"><%= piece[:comment] %></span>
     </div>
