@@ -1,0 +1,49 @@
+  <%= partial(:"partials/project-entire", :locals => {
+    :name => "Transforming Medicine",
+    :role => "Front-end development",
+    :date => "February 2015",
+    :live_link => "http://www.transformingmedicine.org/",
+    :live_link_name => "www.transformingmedicine.org",
+    :content => [
+      {
+        type: "copy",
+        copy: "While on co-op at <a href='http://www.ronikdesign.com'>Ronik</a> I worked on a team that built a marketing site for Transforming Medicine. Transforming Medicine is a non-profit organization that is aiming to match people with life-threatening illnesses to the best treatments for their condition. The client has the current control over the background image and the content, so the live site may not appear as it did when we first launched it."
+      },
+      {
+        type: "copy",
+        copy: "We set up a CMS on <a href='http://www.webhook.com/'>Webhook</a>, used <a href='https://github.com/ronik-design/slush-stencil'>Slush Stencil</a> to scaffold the site, and styled in <a href='https://learnboost.github.io/stylus/'>Stylus</a>. For the numerous scroll interactions we used <a href='http://janpaepke.github.io/ScrollMagic'>ScrollMagic</a>."
+      },
+      {
+        type: "image",
+        size: "desktop",
+        url: "../images/work/tm/home-desktop.png",
+        comment: "screenshot of the homepage on desktop"
+      },
+      {
+        type: "image",
+        size: "mobile",
+        url: "../images/work/tm/home-mobile.png",
+        comment: "screenshot of the homepage on mobile"
+      },
+      {
+        type: "image",
+        size: "tablet",
+        url: "../images/work/tm/mission-tablet.png",
+        comment: "screenshot of the Our Mission page on tablet"
+      },
+      {
+        type: "image",
+        size: "mobile",
+        url: "../images/work/tm/story-mobile.png",
+        comment: "screenshot of the Our Story page on mobile"
+      },
+    ],
+    :prev => {
+      url: "../work/wellthy.html",
+      title: "Wellthy"
+    },
+    :after => {
+      url: "../work/human-ventures.html",
+      title: "Human Ventures"
+    }
+  }) %>
