@@ -24,7 +24,9 @@
     <% end %>
     <div class="proj-image">
       <img src="<%= piece[:url] %>">
+      <% if piece[:comment] %>
       <span class="comment"><%= piece[:comment] %></span>
+      <% end %>
     </div>
   </div>
   <% end %>

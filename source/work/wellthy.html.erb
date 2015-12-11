@@ -1,0 +1,38 @@
+  <%= partial(:"partials/project-entire", :locals => {
+    :name => "Wellthy",
+    :role => "Front-end development",
+    :date => "June 2015",
+    :live_link => "https://www.wellthy.com/",
+    :live_link_name => "www.wellthy.com",
+    :content => [
+        {
+          type: "copy",
+          copy: "While on co-op at Ronik I worked on a team that created a web application for Wellthy, a health startup. Wellthy aims to provide affordable services to people who are caring for their sick or injured loved ones. They employ care coordinatos who are tasked with helping specific customers."
+        },
+        {
+          type: "copy",
+          copy: "As we waited for Wellthy's developers to finish the back-end, we began to statically code the front-end after designs were complete. The static version of the site was created with <a target='_blank' href='https://github.com/ronik-design/slush-stencil'>Slush Stencil</a>, so we templated in <a target='_blank' href='http://paularmstrong.github.io/swig/'>Swig</a> and styled in <a href='https://learnboost.github.io/stylus/' target='_blank'>Stylus</a>. Once the back-end was complete, we worked on converting our static pages to the Django site."
+        },
+        {
+          type: "image",
+          columns: 9,
+          url: "../images/work/wellthy/desktop.png",
+          comment: "mock-up of the homepage on desktop"
+        },
+        {
+          type: "image",
+          columns: 3,
+          url: "../images/work/wellthy/mobile.png",
+          comment: "mock-up of a page for the health planner view"
+        }
+    ],
+    :after => {
+      url: "../work/ronik-awards.html",
+      title: "Ronik Awards"
+    },
+    :prev => {
+      url: "../work/transforming-medicine.html",
+      title: "Transforming Medicine"
+    }
+  }) %>
+
