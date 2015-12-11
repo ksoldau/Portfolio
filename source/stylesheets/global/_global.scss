@@ -6,6 +6,49 @@ html, body {
   height: 100%;
   font-weight: 400;
 }
+
+/* set up classes for jeet grid */
+.col-1 {
+  @include j-column(1/12);
+}
+.col-2 {
+  @include j-column(2/12);
+}
+.col-3 {
+  @include j-column(3/12);
+}
+.col-4 {
+  @include j-column(4/12);
+}
+.col-5 {
+  @include j-column(5/12);
+}
+.col-6 {
+  @include j-column(6/12);
+}
+.col-7 {
+  @include j-column(7/12);
+}
+.col-8 {
+  @include j-column(8/12);
+}
+.col-9 {
+  @include j-column(9/12);
+}
+.col-10 {
+  @include j-column(10/12);
+}
+.col-11 {
+  @include j-column(11/12);
+}
+.col-12 {
+  @include j-column(12/12);
+}
+.edge {
+  margin-right: 0;
+}
+
+
 .page {
   position: relative;
   min-height: 100%;
@@ -41,8 +84,11 @@ html, body {
 }
 .nav__name {
   letter-spacing: 0.6px;
-  font-size: 24px;
+  font-size: 20px;
   text-decoration: none;
+  &:hover {
+    color: $black;
+  }
   @media (max-width: 412px) {
     text-align: center;
     display: block;
@@ -72,25 +118,26 @@ html, body {
 
   &.active {
     color: $black;
+    &:hover {
+      color: $black;
+    }
   }
   &:hover {
-    color: $highlight;
+    color: lighten($highlight, 10%);
   }
 }
 .footer, .page:after {
   height: $footer_height;
 }
 .footer {
-  //position: absolute;
-  padding-top: 20px;
-  font-size: 12px;
-  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  height: $footer_height;
+  width: 100%;
   max-width: 1000px;
-  //bottom: 0;
-  //height: $footer_height - 10;
-  @media (min-width: $min_lg) {
-    padding-left: 40px;
-  }
+  margin: 0 auto;
+  font-size: 12px;
+  padding-top: 20px;
   @media (min-width: $min_sm) and (max-width: $max_md) {
     padding-left: 5%;
   }

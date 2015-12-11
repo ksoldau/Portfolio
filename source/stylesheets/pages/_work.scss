@@ -8,7 +8,7 @@
 }
 .proj-details {
   margin-top: 12px;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 .proj-detail {
   font-size: 14px;
@@ -83,6 +83,9 @@
   }
 }
 .next {
+  float: right;
+  margin-top: 20px;
+
   > * {
     display: inline-block;
   }
@@ -91,9 +94,7 @@
   }
   @media (min-width: $min-sm) {
     display: inline-block;
-    position: absolute;
-    right: 5%;
-    bottom: 18px;
+    bottom: 60px;
   }
 }
 .next__header {
@@ -117,7 +118,7 @@
   }
 }
 .next__prev {
-  margin-left: 20px;
+  margin-left: 40px;
   @media (max-width: $max-xs) {
     float: right;
   }

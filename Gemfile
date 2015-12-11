@@ -15,3 +15,5 @@ gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 
 #Font Awesome
 gem 'font-awesome-sass'
+
+#

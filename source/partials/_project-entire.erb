@@ -10,15 +10,19 @@
 <div class="proj-content">
 <% content.each do |piece| %>
   <% if piece[:type] === "copy" %>
+  <div class="proj-copy col-12">
     <% if piece[:header] %>
-      <h3 class="proj-header"><%= piece[:header] %></h3>
+    <h3 class="proj-header"><%= piece[:header] %></h3>
     <% end %>
-  <p class="copy">
-    <%= piece[:copy] %>
-  </p>
+    <p class="copy"><%= piece[:copy] %></p>
+  </div>
   <% elsif piece[:type] === "image" %>
-  <div class="proj-image-wrap">
-    <div class="proj-image <%= piece[:size] %>">
+    <% if defined?(piece[:edge]) && piece[:edge] == true %>
+    <div class="proj-image-wrap edge col-<%= piece[:columns] %>">
+    <% elsif %>
+    <div class="proj-image-wrap col-<%= piece[:columns] %>">
+    <% end %>
+    <div class="proj-image">
       <img src="<%= piece[:url] %>">
       <span class="comment"><%= piece[:comment] %></span>
     </div>
@@ -26,22 +30,23 @@
   <% end %>
 <% end %>
 </div>
-
-<div class="next">
-  <% if defined?(after) %>
-  <div class="next__next">
-      <h3 class="next__header">Next project</h3>
-      <a class="next__link" href="<%= after[:url] %>" >
-        <%= after[:title] %>
-      </a>
+<div class="col-12">
+  <div class="next">
+    <% if defined?(after) %>
+    <div class="next__next">
+        <h3 class="next__header">Next project</h3>
+        <a class="next__link" href="<%= after[:url] %>" >
+          <%= after[:title] %>
+        </a>
+    </div>
+    <% end %>
+    <% if defined?(prev) %>
+    <div class="next__prev">
+        <h3 class="next__header">Previous project</h3>
+        <a class="next__link" href="<%= prev[:url] %>" >
+          <%= prev[:title] %>
+        </a>
+    </div>
+    <% end %>
   </div>
-  <% end %>
-  <% if defined?(prev) %>
-  <div class="next__prev">
-      <h3 class="next__header">Previous project</h3>
-      <a class="next__link" href="<%= prev[:url] %>" >
-        <%= prev[:title] %>
-      </a>
-  </div>
-  <% end %>
 </div>
