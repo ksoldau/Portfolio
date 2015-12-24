@@ -138,10 +138,4 @@ html, body {
   margin: 0 auto;
   font-size: 12px;
   padding-top: 20px;
-  @media (min-width: $min_sm) and (max-width: $max_md) {
-    padding-left: 5%;
-  }
-  @media (max-width: $max_xs) {
-    padding-left: 5%;
-  }
 }
