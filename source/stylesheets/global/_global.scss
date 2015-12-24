@@ -43,6 +43,7 @@ html, body {
 }
 .col-12 {
   @include j-column(12/12);
+  margin-right: 0;
 }
 .edge {
   margin-right: 0;
