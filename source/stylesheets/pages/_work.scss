@@ -42,6 +42,11 @@
 .proj-content .copy {
   max-width: 450px;
 }
+.proj-image-wrap {
+  @media (max-width: $max-xs) {
+    width: 100%;
+  }
+}
 .proj-image {
   display: inline-block;
   margin-bottom: 20px;
