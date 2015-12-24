@@ -83,22 +83,24 @@
   }
 }
 .next {
-  float: right;
-  margin-top: 20px;
+  margin-top: 40px;
 
   > * {
     display: inline-block;
   }
   @media (max-width: $max-xs) {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
   }
   @media (min-width: $min-sm) {
     display: inline-block;
+    float: right;
     bottom: 60px;
   }
 }
 .next__header {
-  font-size: 16px;
+  font-size: 14px;
 }
 .next__link {
   margin-top: 8px;
@@ -110,16 +112,23 @@
   > * {
     text-align: right;
   }
+  @media (max-width: $max-xs) {
+    float: left;
+    padding-right: 10px;
+  }
 }
+
 .next__next,
 .next__prev {
   @media (max-width: $max-xs) {
-    width: 47%;
+    width: 140px;
   }
 }
 .next__prev {
-  margin-left: 40px;
   @media (max-width: $max-xs) {
-    float: right;
+    padding-left: 10px;
+  }
+  @media (min-width: $min-sm) {
+    margin-left: 40px;
   }
 }
