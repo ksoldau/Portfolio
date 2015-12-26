@@ -34,21 +34,30 @@
 </div>
 <div class="col-12">
   <div class="next">
-    <% if defined?(after) %>
+  <% currentOrder = data.projects.order.index(key) %>
+  <% if currentOrder >= 1 %>
+    <% previousKey = data.projects.order[currentOrder - 1] %>
+    <% previousName = data.projects[previousKey].name %>
+    <% previousUrl = data.projects[previousKey]['details-url'] %>
     <div class="next__next">
-        <h3 class="next__header">Next project</h3>
-        <a class="next__link" href="<%= after[:url] %>" >
-          <%= after[:title] %>
+        <a class="next__link" href="<%= previousUrl %>" >
+        <h3 class="next__header">Previous Project</h3>
+          <%= previousName %>
         </a>
     </div>
-    <% end %>
-    <% if defined?(prev) %>
+  <% end %>
+
+  <% if currentOrder < data.projects.order.length - 1 %>
+    <% nextKey = data.projects.order[currentOrder + 1] %>
+    <% nextName = data.projects[nextKey].name %>
+    <% nextUrl = data.projects[nextKey]['details-url'] %>
     <div class="next__prev">
-        <h3 class="next__header">Previous project</h3>
-        <a class="next__link" href="<%= prev[:url] %>" >
-          <%= prev[:title] %>
+        <a class="next__link" href="<%= nextUrl %>" >
+        <h3 class="next__header">Next Project</h3>
+          <%= nextName %>
         </a>
     </div>
-    <% end %>
+  <% end %>
+
   </div>
 </div>

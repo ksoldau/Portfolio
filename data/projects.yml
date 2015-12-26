@@ -1,0 +1,31 @@
+order:
+  - matisia
+  - human-ventures
+  - transforming-medicine
+  - wellthy
+  - ronik-awards
+matisia:
+  name: Matisia
+  role: Front-end development
+  img-url: "/images/matisia-tile-6.png"
+  details-url: "/work/matisia.html"
+human-ventures:
+  name: Human Ventures
+  role: Front-end development
+  img-url: "/images/hv-tile.png"
+  details-url: "/work/human-ventures.html"
+transforming-medicine:
+  name: Transforming Medicine
+  role: Front-end development
+  img-url: "/images/tm-tile.png"
+  details-url: "/work/transforming-medicine.html"
+wellthy:
+  name: Wellthy
+  role: Front-end development
+  img-url: "/images/wellthy-tile.png"
+  details-url: "/work/wellthy.html"
+ronik-awards:
+  name: Ronik Awards Page
+  role: Design & front-end development
+  img-url: "/images/ra-tile.png"
+  details-url: "/work/ronik-awards.html"

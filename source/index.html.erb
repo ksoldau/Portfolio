@@ -9,36 +9,16 @@ page: "home"
 <div class="projects">
 <h2 class="projects__header">Recent Work</h2>
 <ul class="projects__list">
+  <% data.projects.order.each do |proj| %>
+
   <%= partial(:"partials/project-tile", :locals => {
-    :name => "Matisia",
-    :role => "Front-end development",
-    :img_url => "../images/matisia-tile-6.png",
-    :details_url => "/work/matisia.html"
+    :name => data.projects[proj].name,
+    :role => data.projects[proj].role,
+    :img_url => data.projects[proj]['img-url'],
+    :details_url => data.projects[proj]['details-url']
   }) %>
-  <%= partial(:"partials/project-tile", :locals => {
-    :name => "Human Ventures",
-    :role => "Front-end development",
-    :img_url => "../images/hv-tile.png",
-    :details_url => "/work/human-ventures.html"
-  }) %>
-  <%= partial(:"partials/project-tile", :locals => {
-    :name => "Transforming Medicine",
-    :role => "Front-end development",
-    :img_url => "../images/tm-tile.png",
-    :details_url => "/work/transforming-medicine.html"
-  }) %>
-  <%= partial(:"partials/project-tile", :locals => {
-    :name => "Wellthy",
-    :role => "Front-end development",
-    :img_url => "../images/wellthy-tile.png",
-    :details_url => "/work/wellthy.html"
-  }) %>
-  <%= partial(:"partials/project-tile", :locals => {
-    :name => "Ronik Awards Page",
-    :role => "Design & front-end development",
-    :img_url => "../images/ra-tile.png",
-    :details_url => "/work/ronik-awards.html"
-  }) %>
+
+  <% end %>
 
   </ul>
   <div class="clear"></div>
