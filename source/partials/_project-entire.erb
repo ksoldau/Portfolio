@@ -2,9 +2,11 @@
 <ul class="proj-details">
   <li class="proj-detail"><%= role %></li>
   <li class="proj-detail"><%= date %></li>
+  <% if defined?(live_link) %>
   <li class="proj-detail">
-    <a target="_blank" href="<%= live_link %>" class="proj-detail__live-link"><%= live_link_name %></a>
+    <a target="_blank" href="<%= live_link[:url] %>" class="proj-detail__live-link"><%= live_link[:name] %></a>
   </li>
+  <% end %>
 </ul>
 
 <div class="proj-content">
