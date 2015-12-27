@@ -37,29 +37,29 @@
 <div class="col-12">
   <div class="next">
   <% currentOrder = data.projects.order.index(key) %>
+  <div class="next__next">
   <% if currentOrder >= 1 %>
     <% previousKey = data.projects.order[currentOrder - 1] %>
     <% previousName = data.projects[previousKey].name %>
     <% previousUrl = data.projects[previousKey]['details-url'] %>
-    <div class="next__next">
         <a class="next__link" href="<%= previousUrl %>" >
         <h3 class="next__header">Previous Project</h3>
           <%= previousName %>
         </a>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 
+  <div class="next__prev">
   <% if currentOrder < data.projects.order.length - 1 %>
     <% nextKey = data.projects.order[currentOrder + 1] %>
     <% nextName = data.projects[nextKey].name %>
     <% nextUrl = data.projects[nextKey]['details-url'] %>
-    <div class="next__prev">
         <a class="next__link" href="<%= nextUrl %>" >
         <h3 class="next__header">Next Project</h3>
           <%= nextName %>
         </a>
-    </div>
   <% end %>
+  </div>
 
   </div>
 </div>

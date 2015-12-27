@@ -119,6 +119,7 @@
   > * {
     text-align: right;
   }
+  min-height: 1px;
   @media (max-width: $max-xs) {
     float: left;
     padding-right: 10px;
