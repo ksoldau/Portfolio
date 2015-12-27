@@ -6,10 +6,10 @@
     margin-top: 70px;
   }
   @media (min-width: $min_sm) and (max-width: $max_md) {
-    @include j-column(7/12);
+    @include j-column(6/12);
   }
   @media (min-width: $min_lg) {
-    @include j-column(6/12);
+    @include j-column(7/12);
   }
 }
 .hero__name {
@@ -79,6 +79,8 @@
   bottom: 0;
   right: 0;
   left: 0;
+  transition: background-color 0.15s ease-in-out;
+  background-color: rgba(0, 0, 0, 0);
 }
 .project__info {
   position: absolute;
