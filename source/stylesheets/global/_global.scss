@@ -114,7 +114,7 @@ html, body {
 .nav__link {
   text-decoration: none;
   font-weight: 700;
-  color: #c5c5c5;
+  color: #C4C2C2;
   transition: color 0.15s ease-in-out;
 
   &.active {
@@ -124,7 +124,7 @@ html, body {
     }
   }
   &:hover {
-    color: lighten($highlight, 10%);
+    color: desaturate(lighten($highlight, 5), 3);
   }
 }
 .footer, .page:after {
