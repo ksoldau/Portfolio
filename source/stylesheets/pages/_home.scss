@@ -36,6 +36,8 @@
 
   @media (max-width: $max_xs) {
     @include j-column(1);
+    margin-bottom: 5%;
+    margin-right: 0%;
   }
   @media (min-width: $min_sm) and (max-width: $max_sm) {
     @include j-column(1/2);
