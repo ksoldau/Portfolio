@@ -22,6 +22,11 @@
   }
 }
 .bio {
+
+  p {
+    padding-bottom: 24px;
+  }
+
   @media (max-width: $max-xs) {
     width: 100%;
   }
