@@ -2,6 +2,7 @@
   margin-top: 100px;
   @media (max-width: $max_xs) {
     @include j-column(1);
+    max-width: 430px;
     margin-top: 70px;
   }
   @media (min-width: $min_sm) and (max-width: $max_md) {
