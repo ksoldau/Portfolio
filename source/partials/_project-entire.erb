@@ -16,7 +16,7 @@
     <% if piece[:header] %>
     <h3 class="proj-header"><%= piece[:header] %></h3>
     <% end %>
-    <p class="copy"><%= piece[:copy] %></p>
+    <p><%= piece[:copy] %></p>
   </div>
   <% elsif piece[:type] === "image" %>
     <% if defined?(piece[:edge]) && piece[:edge] == true %>
@@ -26,7 +26,7 @@
     <% end %>
     <div class="proj-image">
       <img src="<%= piece[:url] %>">
-      <% if piece[:comment] %>
+      <% if defined?(piece[:comment]) %>
       <span class="comment"><%= piece[:comment] %></span>
       <% end %>
     </div>
