@@ -26,7 +26,7 @@
     <% end %>
     <div class="proj-image">
       <img src="<%= piece[:url] %>">
-      <% if defined?(piece[:comment]) %>
+      <% if piece[:comment] %>
       <span class="comment"><%= piece[:comment] %></span>
       <% end %>
     </div>
