@@ -6,7 +6,9 @@ html, body {
   height: 100%;
   font-weight: 400;
 }
-
+a {
+  outline: none;
+}
 /* set up classes for jeet grid */
 .col-1 {
   @include j-column(1/12);
